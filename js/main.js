@@ -1,8 +1,3 @@
-/* ===================================================================
- * Ceevee 2.0.0 - Main JS
- *
- * ------------------------------------------------------------------- */
-
 (function(html) {
 
     "use strict";
@@ -315,3 +310,40 @@
     })();
 
 })(document.documentElement);
+
+const phrases = ["Cristian Ayala", "Desarrollador", "Creativo", "Apasionado"];
+let currentPhraseIndex = 0;
+let currentTextIndex = 0;
+let isDeleting = false;
+
+const typingSpeed = 150; // Velocidad al escribir
+const deletingSpeed = 150; // Velocidad al borrar
+const pauseBetweenPhrases = 500; // Pausa entre frases
+
+function typeEffect() {
+    const typewriterText = document.getElementById("typewriter-text");
+    const currentPhrase = phrases[currentPhraseIndex];
+
+    if (isDeleting) {
+        typewriterText.textContent = currentPhrase.slice(0, currentTextIndex--);
+        if (currentTextIndex < 0) {
+            isDeleting = false;
+            currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+            setTimeout(typeEffect, pauseBetweenPhrases); // Pausa antes de escribir la siguiente frase
+            return; // Salimos para no seguir el setTimeout en este ciclo
+        }
+    } else {
+        typewriterText.textContent = currentPhrase.slice(0, ++currentTextIndex);
+        if (currentTextIndex === currentPhrase.length) {
+            isDeleting = true;
+        }
+    }
+
+    // Mantener la misma velocidad tanto al escribir como al borrar
+    setTimeout(typeEffect, isDeleting ? deletingSpeed : typingSpeed);
+}
+
+// Inicializa el texto en el elemento
+document.getElementById("typewriter-text").textContent = phrases[currentPhraseIndex];
+setTimeout(typeEffect, 1000); // Tiempo inicial antes de iniciar la animación
+

@@ -1,48 +1,37 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-<head>
 
-    <!--- basic page needs
-    ================================================== -->
+<head>
+    <!-- Basic page needs -->
     <meta charset="utf-8">
     <title>Cristian Ayala Sánchez - Desarrollador Web</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- mobile specific metas
-    ================================================== -->
+    <!-- Mobile specific metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS
-    ================================================== -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/vendor.css">
 
-    <!-- script
-    ================================================== -->
+    <!-- Script -->
     <script defer src="js/vendor/fontawesome/all.min.js"></script>
 
-    <!-- favicons
-    ================================================== -->
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-
 </head>
 
 <body id="top" class="ss-preload">
-
-
-    <!-- preloader
-    ================================================== -->
+    <!-- Preloader -->
     <div id="preloader">
         <div id="loader"></div>
     </div>
 
-
-    <!-- header
-    ================================================== -->
+    <!-- Header -->
     <header class="s-header">
         <div class="row s-header__nav-wrap">
             <nav class="s-header__nav">
@@ -53,36 +42,26 @@
                     <li><a class="smoothscroll" href="#portfolio">Proyectos</a></li>
                     <li><a class="smoothscroll" href="#contact">Contáctame</a></li>
                 </ul>
-            </nav>            
-        </div> <!-- end row -->
-        
+            </nav>
+        </div>
+
         <a class="s-header__menu-toggle" href="#0" title="Menu">
             <span class="s-header__menu-icon"></span>
         </a>
-    </header> <!-- end s-header -->
+    </header>
 
-
-    <!-- hero
-    ================================================== -->
+    <!-- Hero Section -->
     <section id="hero" class="s-hero target-section">
-
         <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
-
         <div class="row s-hero__content">
             <div class="column">
-
                 <div class="s-hero__content-about">
-
-                    <h1>Soy <span style="color: #F06000;">Cristian Ayala</span>.</h1>
-
+                    <h1 class="typewriter-title">
+                        Soy <span id="typewriter-text" class="highlight">Cristian Ayala</span>
+                    </h1>
                     <h3>
-                        Soy <span>Cristian Ayala Sánchez</span>, un <span>Desarrollador Full Stack</span> con habilidades en <span>JavaScript</span>, <span>React</span>, <span>SQL</span> y <span>Python</span>. Trabajo en el <span>frontend</span> y <span>backend</span> utilizando herramientas como <span>Git</span> y <span>Bootstrap</span>. ¡Desplázate para <a class="smoothscroll" href="#about">saber más</a>!
+                        Soy <span id="typewriter-text-1">Cristian Ayala Sánchez</span>, un <span>Desarrollador Full Stack</span> con habilidades en <span>JavaScript</span>, <span>React</span>, <span>SQL</span> y <span>Python</span>. Trabajo en el <span>frontend</span> y <span>backend</span> utilizando herramientas como <span>Git</span> y <span>Bootstrap</span>. ¡Desplázate para <a class="smoothscroll" href="#about">saber más</a>!
                     </h3>
-                    
-                    
-                    
-                    
-
                     <div class="s-hero__content-social">
                         <a href="https://www.linkedin.com/in/cristian05/" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-linkedin" aria-hidden="true"></i>
@@ -97,89 +76,77 @@
                             <i class="fab fa-twitter" aria-hidden="true"></i>
                         </a>
                     </div>
-                </div> <!-- end s-hero__content-about -->
-
+                </div>
             </div>
-        </div> <!-- s-hero__content -->
+        </div>
 
         <div class="s-hero__scroll">
             <a href="#about" class="s-hero__scroll-link smoothscroll">
                 <span class="scroll-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path>
+                    </svg>
                 </span>
                 <span class="scroll-text">Ver más</span>
             </a>
-        </div> <!-- s-hero__scroll -->
+        </div>
+    </section>
 
-    </section> <!-- end s-hero -->
-
-
-    <!-- about
-    ================================================== -->
+    <!-- About Section -->
     <section id="about" class="s-about target-section">
-
         <div class="row">
             <div class="column large-3 tab-12">
-                <img class="s-about__pic" src="images/avatars/logocristian.jpg" alt="">
+                <img class="s-about__pic" src="images/portfolio/logocristian.jpg" alt="">
             </div>
             <div class="column large-9 tab-12 s-about__content">
                 <h3>Sobre mí</h3>
                 <p>
                     Hola, soy Cristian Ayala Sánchez, un desarrollador Full Stack apasionado con experiencia en JavaScript, React, Python, Java y Flask. Mi objetivo es crear soluciones web eficientes y funcionales. He trabajado en proyectos como Smokeless, una aplicación para ayudar a las personas a dejar de fumar, que incluye un CRUD de usuarios, seguimiento personalizado y recomendaciones diarias. Mis habilidades abarcan el desarrollo frontend con HTML5, CSS3, Bootstrap y TailwindCSS, así como el desarrollo backend con SQL y APIs RESTful. Estoy abierto a colaborar en proyectos o discutir sobre tecnología.
                 </p>
-                
-                
-                
 
                 <hr>
 
                 <div class="row s-about__content-bottom">
                     <div class="column w-1000-stack">
                         <h3>Detalles de Contacto</h3>
-    
                         <p>
-                        Cristian Ayala Sánchez <br>
-                        Murcia, España <br>
-                        <a href="tel:+34657158710">+34 657 15 87 10</a>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ayalasanchezcristian2000@gmail.com" target="_blank" rel="noopener noreferrer">
-                            ayalasanchezcristian2000@gmail.com
-                        </a>
+                            Cristian Ayala Sánchez <br>
+                            Murcia, España <br>
+                            <a href="tel:+34657158710">+34 657 15 87 10</a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ayalasanchezcristian2000@gmail.com" target="_blank" rel="noopener noreferrer">
+                                ayalasanchezcristian2000@gmail.com
+                            </a>
                         </p>
                     </div>
                     <div class="column w-1000-stack">
                         <a href="./images/portfolio/CV ESPAÑOL.pdf" download="CV ESPAÑOL.pdf" class="btn btn--download">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path>
+                                <path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path>
+                            </svg>
                             Download CV
                         </a>
                     </div>
                 </div>
             </div>
-        </div> <!-- end row -->
+        </div>
+    </section>
 
-    </section> <!-- end s-about -->
-
-
-    <!-- resume
-    ================================================== -->
+    <!-- Resume Section -->
     <section id="resume" class="s-resume target-section">
-        
         <div class="row s-resume__section">
             <div class="column large-3 tab-12">
                 <h3 class="section-header-allcaps">Experiencia</h3>
             </div>
             <div class="column large-9 tab-12">
                 <div class="resume-block">
-
                     <div class="resume-block__header">
                         <h4 class="h3">Siabyte</h4>
                         <p class="resume-block__header-meta">
-                            <span> Técnico de Soporte Informático.</span> 
-                            <span class="resume-block__header-date">
-                                2023
-                            </span>
+                            <span>Técnico de Soporte Informático.</span>
+                            <span class="resume-block__header-date">2023</span>
                         </p>
                     </div>
-
                     <ul>
                         <li>Mantenimiento de sitios web y actualizaciones periódicas.</li>
                         <li>Inserción y actualización de productos en plataformas web.</li>
@@ -192,10 +159,9 @@
                         <li>Configuración de impresoras y otros periféricos.</li>
                         <li>Monitoreo y respaldo de sistemas y datos críticos.</li>
                     </ul>
-                </div> <!-- end resume-block -->
+                </div>
             </div>
-        </div> <!-- s-resume__section -->
-
+        </div>
 
         <div class="row s-resume__section">
             <div class="column large-3 tab-12">
@@ -203,46 +169,32 @@
             </div>
             <div class="column large-9 tab-12">
                 <div class="resume-block">
-
                     <div class="resume-block__header">
                         <h4 class="h3">4Geeks Academy España</h4>
                         <p class="resume-block__header-meta">
-                            <span>Full stack developer</span> 
-                            <span class="resume-block__header-date">
-                                2024
-                            </span>
+                            <span>Full stack developer</span>
+                            <span class="resume-block__header-date">2024</span>
                         </p>
                     </div>
-
                     <p>
                         Desarrollé habilidades avanzadas en programación y diseño web en 4Geeks Academy, enfocándome en tecnologías como JavaScript, React y Python. El curso me brindó la oportunidad de trabajar en proyectos prácticos que fortalecieron mi capacidad para crear soluciones innovadoras y eficientes, tanto en el frontend como en el backend.
-                        </p>
-
-                </div> <!-- end resume-block -->
+                    </p>
+                </div>
 
                 <div class="resume-block">
-
                     <div class="resume-block__header">
                         <h4 class="h3">Formación en Sistemas Microinformáticos y Redes</h4>
                         <p class="resume-block__header-meta">
-                            <span>Técnico informático</span> 
-                            <span class="resume-block__header-date">
-                                2020-2022
-                            </span>
+                            <span>Técnico informático</span>
+                            <span class="resume-block__header-date">2020-2022</span>
                         </p>
                     </div>
-                    
-
                     <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore 
-                    vero quidem nobis maxime dolorem aliquam quisquam eum ipsum amet. Vitae 
-                    aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam 
-                    nesciunt facilis! Porro architecto dicta inventore tempora ratione quia odio.
+                        Este curso proporcionó una sólida base en sistemas microinformáticos y redes, cubriendo instalación, configuración y mantenimiento de equipos informáticos y redes de datos. Aprendí sobre diagnóstico y resolución de problemas técnicos, así como seguridad en redes y gestión de sistemas operativos. Esta formación técnica me capacitó para trabajar en entornos de soporte y administración de sistemas con habilidades prácticas y enfoque en soluciones efectivas.
                     </p>
-
-                </div> <!-- end resume-block -->
+                </div>
             </div>
-        </div> <!-- s-resume__section -->
+        </div>
 
         <div class="row s-resume__section">
             <div class="column large-3 tab-12">
@@ -250,11 +202,9 @@
             </div>
             <div class="column large-9 tab-12">
                 <div class="resume-block">
-        
                     <p>
                         Soy un desarrollador full stack con habilidades en diversas tecnologías clave. Me especializo en crear soluciones eficientes y efectivas, aprovechando herramientas modernas para optimizar mis proyectos.
                     </p>
-        
                     <ul class="skill-bars-fat">
                         <li>
                             <div class="progress percent85"></div>
@@ -281,18 +231,13 @@
                             <strong>Java</strong>
                         </li>
                     </ul>
-        
-                </div> <!-- end resume-block -->
+                </div>
             </div>
-        </div> <!-- s-resume__section -->        
+        </div>
+    </section>
 
-    </section> <!-- end s-resume -->
-
-
-    <!-- portfolio
-    ================================================== -->
+    <!-- Portfolio Section -->
     <section id="portfolio" class="s-portfolio target-section">
-
         <div class="row s-portfolio__header">
             <div class="column large-12">
                 <h3>PROYECTOS</h3>
@@ -300,243 +245,198 @@
         </div>
 
         <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
-
             <div class="column folio-item">
                 <a href="#modal-01" class="folio-item__thumb">
-                    <img src="images/portfolio/smokeless.png"
-                         srcset="images/portfolio/smokeless.png 1x, 
-                                 images/portfolio/smokeless.png 2x" alt="">
+                    <img src="images/portfolio/smokeless.png" srcset="images/portfolio/smokeless.png 1x, images/portfolio/smokeless.png 2x" alt="">
                 </a>
-            </div> <!-- end folio-item -->
+            </div>
 
             <div class="column folio-item">
                 <a href="#modal-02" class="folio-item__thumb">
-                    <img src="images/portfolio/codecreeps.png" 
-                         srcset="images/portfolio/codecreeps.png 1x, 
-                                 images/portfolio/codecreeps.png 2x" alt="">
+                    <img src="images/portfolio/codecreeps.png" srcset="images/portfolio/codecreeps.png 1x, images/portfolio/codecreeps.png 2x" alt="">
                 </a>
-            </div> <!-- end folio-item -->
+            </div>
 
             <div class="column folio-item">
                 <a href="#modal-03" class="folio-item__thumb">
-                    <img src="images/portfolio/minimalismo.jpg" 
-                         srcset="images/portfolio/minimalismo.jpg 1x, 
-                                 images/portfolio/minimalismo@2x.jpg 2x" alt="">
+                    <img src="images/portfolio/comingsoon.png" srcset="images/portfolio/comingsoon.png 1x, images/portfolio/comingsoon.png 2x" alt="">
                 </a>
-            </div> <!-- end folio-item -->
+            </div>
 
             <div class="column folio-item">
                 <a href="#modal-04" class="folio-item__thumb">
-                    <img src="images/portfolio/shutterbug.jpg" 
-                         srcset="images/portfolio/shutterbug.jpg 1x, 
-                                 images/portfolio/shutterbug@2x.jpg 2x" alt="">
+                    <img src="images/portfolio/comingsoon.png" srcset="images/portfolio/comingsoon.png 1x, images/portfolio/comingsoon.png 2x" alt="">
                 </a>
-            </div> <!-- end folio-item -->
+            </div>
 
             <div class="column folio-item">
                 <a href="#modal-05" class="folio-item__thumb">
-                    <img src="images/portfolio/fuji.jpg" 
-                         srcset="images/portfolio/fuji.jpg 1x, 
-                                 images/portfolio/fuji@2x.jpg 2x" alt="">
+                    <img src="images/portfolio/comingsoon.png" srcset="images/portfolio/comingsoon.png 1x, images/portfolio/comingsoon.png 2x" alt="">
                 </a>
-            </div> <!-- end folio-item -->
+            </div>
 
             <div class="column folio-item">
                 <a href="#modal-06" class="folio-item__thumb">
-                    <img src="images/portfolio/skaterboy.jpg" 
-                         srcset="images/portfolio/skaterboy.jpg 1x, 
-                                 images/portfolio/skaterboy@2x.jpg 2x" alt="">
+                    <img src="images/portfolio/comingsoon.png" srcset="images/portfolio/comingsoon.png 1x, images/portfolio/comingsoon.png 2x" alt="">
                 </a>
-            </div> <!-- end folio-item -->
+            </div>
 
             <div class="column folio-item">
                 <a href="#modal-07" class="folio-item__thumb">
-                    <img src="images/portfolio/rucksack.jpg" 
-                         srcset="images/portfolio/rucksack.jpg 1x, 
-                                 images/portfolio/rucksack@2x.jpg 2x" alt="">
+                    <img src="images/portfolio/comingsoon.png" srcset="images/portfolio/comingsoon.png 1x, images/portfolio/comingsoon.png 2x" alt="">
                 </a>
-            </div> <!-- end folio-item -->
+            </div>
 
             <div class="column folio-item">
                 <a href="#modal-08" class="folio-item__thumb">
-                    <img src="images/portfolio/sanddunes.jpg" 
-                         srcset="images/portfolio/sanddunes.jpg 1x, 
-                                 images/portfolio/sanddunes@2x.jpg 2x" alt="">
+                    <img src="images/portfolio/comingsoon.png" srcset="images/portfolio/comingsoon.png 1x, images/portfolio/comingsoon.png 2x" alt="">
                 </a>
-            </div> <!-- end folio-item -->
-
-        </div> <!-- end folio-list -->
-
-
-       <!-- Modal Templates Popup
-=========================================================== -->
-<div id="modal-01" hidden>
-    <div class="modal-popup">
-        <div class="modal-popup__links">
-            <ul class="s-footer__social">
-                <li>
-                    <a href="https://github.com/cristiann05/Smokeless" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://sample-service-name-f6ff.onrender.com" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-link" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
+            </div>
         </div>
-        <img src="images/portfolio/smokeless2.png" alt="" />
 
-        <div class="modal-popup__desc">
-            <h5>Smokeless</h5>
-            <p>Smokeless es una web diseñada para ayudar a dejar de fumar. Ofrece un CRUD completo de usuarios y coaches, seguimiento personalizado de solicitudes, conexión en tiempo real con coaches y consejos diarios basados en OpenAI. Además, permite visualizar el progreso del usuario con gráficos atractivos, desarrollados con React y Tailwind CSS. Todo esto crea una experiencia única y motivadora para los usuarios en su camino hacia un estilo de vida sin tabaco.
-            </p>
-            <ul class="modal-popup__cat">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>React</li>
-                <li>JavaScript</li>
-                <li>Tailwind CSS</li>
-                <li>Bootstrap</li>
-                <li>Python</li>
-                <li>Flask</li>
-                <li>SQLAlchemy</li>
-                <li>JWT</li>
-                <li>REST API</li>
-                <li>OpenAI API</li>
-                <li>Leaflet API</li>
-                <li>Cloudinary API</li>
-                <li>GIT</li>
-            </ul>
-            
-            
+        <!-- Modal Templates Popup -->
+        <div id="modal-01" hidden>
+            <div class="modal-popup">
+                <div class="modal-popup__links">
+                    <ul class="s-footer__social">
+                        <li>
+                            <a href="https://github.com/cristiann05/Smokeless" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://sample-service-name-f6ff.onrender.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-link" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="images/portfolio/smokeless2.png" alt="" />
+                <div class="modal-popup__desc">
+                    <h5>Smokeless</h5>
+                    <p>
+                        Smokeless es una web diseñada para ayudar a dejar de fumar. Ofrece un CRUD completo de usuarios y coaches, seguimiento personalizado de solicitudes, conexión en tiempo real con coaches y consejos diarios basados en DeepAI. Además, permite visualizar el progreso del usuario con gráficos atractivos, desarrollados con React y Tailwind CSS. Todo esto crea una experiencia única y motivadora para los usuarios en su camino hacia un estilo de vida sin tabaco.
+                    </p>
+                    <ul class="modal-popup__cat">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>React</li>
+                        <li>JavaScript</li>
+                        <li>Tailwind CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>SQLAlchemy</li>
+                        <li>JWT</li>
+                        <li>REST API</li>
+                        <li>OpenAI API</li>
+                        <li>Leaflet API</li>
+                        <li>Cloudinary API</li>
+                        <li>GIT</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</div> <!-- end modal -->
 
         <div id="modal-02" hidden>
             <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-lamp.jpg" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5>The Lamp</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup__cat">
-                        <li>Branding</li>
+                <div class="modal-popup__links">
+                    <ul class="s-footer__social">
+                        <li>
+                            <a href="https://github.com/cristiann05/CodeCreeps" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://sample-service-name-gc1t.onrender.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-link" aria-hidden="true"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                <img src="images/portfolio/codecreeps2.png" alt="CodeCreeps Image" />
+                <div class="modal-popup__desc">
+                    <h5>CodeCreeps</h5>
+                    <p>
+                        CodeCreeps es una plataforma de desafíos de programación con temática de Halloween, diseñada para mejorar habilidades en distintos lenguajes mediante retos creativos. Ofrece un chat general para que los usuarios compartan dudas, junto con juegos, recursos y actividades temáticas. ¡Un espacio perfecto para aprender y divertirse!
+                    </p>
+                    <ul class="modal-popup__cat">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>React</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>SQLAlchemy</li>
+                        <li>JWT</li>
+                        <li>REST API</li>
+                        <li>Cloudinary API</li>
+                        <li>GIT</li>
+                    </ul>
+                </div>
             </div>
-        </div> <!-- end modal -->
+        </div>
 
+        <!-- Modals 03-08 -->
         <div id="modal-03" hidden>
             <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-minimalismo.jpg" alt="" />
-    
+                <img src="images/portfolio/comingsoon.png" alt="Próximamente" />
                 <div class="modal-popup__desc">
-                    <h5>Minimalismo</h5>
-                    <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti quo corrupti illum velit eveniet ratione necessitatibus ipsam mollitia.</p>
-                    <ul class="modal-popup__cat">
-                        <li>Product Design</li>
-                    </ul>
+                    <h5>Próximamente...</h5>
+                    <p>Disponible próximamente. ¡Atento a las novedades!</p>
                 </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
             </div>
-        </div> <!-- end modal -->
-
+        </div>
         <div id="modal-04" hidden>
             <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-shutterbug.jpg" alt="" />
-    
+                <img src="images/portfolio/comingsoon.png" alt="Próximamente" />
                 <div class="modal-popup__desc">
-                    <h5>Shutterbug</h5>
-                    <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
-                    <ul class="modal-popup__cat">
-                        <li>E-Commerce</li>
-                    </ul>
+                    <h5>Próximamente...</h5>
+                    <p>Disponible próximamente. ¡Atento a las novedades!</p>
                 </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
             </div>
-        </div> <!-- end modal -->
-
+        </div>
         <div id="modal-05" hidden>
             <div class="modal-popup">
-
-                <img src="images/portfolio/gallery/g-fuji.jpg" alt="" />
-    
+                <img src="images/portfolio/comingsoon.png" alt="Próximamente" />
                 <div class="modal-popup__desc">
-                    <h5>Fuji</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup__cat">
-                        <li>Product Design</li>
-                    </ul>
+                    <h5>Próximamente...</h5>
+                    <p>Disponible próximamente. ¡Atento a las novedades!</p>
                 </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
             </div>
-        </div> <!-- end modal -->
-
+        </div>
         <div id="modal-06" hidden>
             <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-skaterboy.jpg" alt="" />
-    
+                <img src="images/portfolio/comingsoon.png" alt="Próximamente" />
                 <div class="modal-popup__desc">
-                    <h5>Skaterboy</h5>
-                    <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
-                    <ul class="modal-popup__cat">
-                        <li>Branding</li>
-                        <li>Product Design</li>
-                    </ul>
+                    <h5>Próximamente...</h5>
+                    <p>Disponible próximamente. ¡Atento a las novedades!</p>
                 </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
             </div>
-        </div> <!-- end modal -->
-
+        </div>
         <div id="modal-07" hidden>
             <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-rucksack.jpg" alt="" />
-    
+                <img src="images/portfolio/comingsoon.png" alt="Próximamente" />
                 <div class="modal-popup__desc">
-                    <h5>Rucksack</h5>
-                    <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
-                    <ul class="modal-popup__cat">
-                        <li>Branding</li>
-                        <li>Product Design</li>
-                    </ul>
+                    <h5>Próximamente...</h5>
+                    <p>Disponible próximamente. ¡Atento a las novedades!</p>
                 </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
             </div>
-        </div> <!-- end modal -->
-
+        </div>
         <div id="modal-08" hidden>
             <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-sanddunes.jpg" alt="" />
-    
+                <img src="images/portfolio/comingsoon.png" alt="Próximamente" />
                 <div class="modal-popup__desc">
-                    <h5>Sand Dunes</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup__cat">
-                        <li>Web Design</li>
-                    </ul>
+                    <h5>Próximamente...</h5>
+                    <p>Disponible próximamente. ¡Atento a las novedades!</p>
                 </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
             </div>
-        </div> <!-- end modal -->
+        </div>
+    </section>
 
-
-    </section> <!-- end s-portfolio -->
-
-    <!-- contact
-    ================================================== -->
+    <!-- Contact Section -->
     <section id="contact" class="s-contact target-section">
-
         <div class="row s-contact__header">
             <div class="column large-12">
                 <h3 class="section-header-allcaps">Contacto</h3>
@@ -544,52 +444,39 @@
         </div>
 
         <div class="row s-contact__content">
-
             <div class="column large-7 medium-12">
-
                 <h4 class="huge-text">
                     ¿Tienes un proyecto en mente? Colaboremos y hagamos algo increíble juntos. ¡Transformemos tu idea en un producto excepcional!
                 </h4>
-
             </div>
 
             <div class="column large-4 medium-12">
-
                 <div class="row contact-infos">
                     <div class="column large-12 medium-6 tab-12">
                         <div class="contact-block">
-                            <h5 class="contact-block__header">
-                                Correo Electrónico
-                            </h5>
+                            <h5 class="contact-block__header">Correo Electrónico</h5>
                             <p class="contact-block__content">
-                            <a class="mailtoui" href="mailto:ayalasanchezcristian2000@gmail.com">ayalasanchezcristian2000@gmail.com</a>
+                                <a class="mailtoui" href="mailto:ayalasanchezcristian2000@gmail.com">ayalasanchezcristian2000@gmail.com</a>
                             </p>
-                        </div> <!-- end contact-block -->
+                        </div>
                     </div>
                     <div class="column large-12 medium-6 tab-12">
                         <div class="contact-block">
-                            <h5 class="contact-block__header">
-                                Teléfono
-                            </h5>
+                            <h5 class="contact-block__header">Teléfono</h5>
                             <p class="contact-block__content">
-                            <a href="tel:+34657158710">+34 657 15 87 10</a>
+                                <a href="tel:+34657158710">+34 657 15 87 10</a>
                             </p>
-                        </div> <!-- end contact-block -->
+                        </div>
                     </div>
-
                     <div class="column large-12">
                         <a href="mailto:ayalasanchezcristian2000@gmail.com" class="mailtoui btn btn--primary h-full-width">Hablemos</a>
                     </div>
-                </div> <!-- end contact-infos -->
-
+                </div>
             </div>
-        </div> <!-- s-contact__content -->
+        </div>
+    </section>
 
-    </section> <!-- end s-contact -->
-    
-
-    <!-- footer
-    ================================================== -->
+    <!-- Footer -->
     <footer class="s-footer">
         <div class="row">
             <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
@@ -615,26 +502,25 @@
                         </a>
                     </li>
                 </ul>
-            </div>            
+            </div>
             <div class="column large-7 medium-6 w-1000-stack ss-copyright">
                 <span>© 2024 Cristian Ayala Sánchez</span>
-                <span>Desarrollado con dedicación y pasión</span>                
+                <span>Desarrollado con dedicación y pasión</span>
             </div>
         </div>
 
         <div class="ss-go-top">
             <a class="smoothscroll" title="Back to Top" href="#top">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
-             </a>
-        </div> <!-- end ss-go-top -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z" />
+                </svg>
+            </a>
+        </div>
     </footer>
 
-
-    <!-- Java Script
-    ================================================== -->
+    <!-- JavaScript -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
 </body>
 
 </html>

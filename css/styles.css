@@ -1,82 +1,3 @@
-/* =================================================================== 
- * Ceevee Main Stylesheet
- * Template Ver. 2.0.0
- * 01-03-2021
- * ------------------------------------------------------------------
- *
- * TOC:
- * # settings and variables
- *      ## fonts
- *      ## colors
- *      ## vertical spacing and typescale
- *      ## grid variables
- * # normalize
- * # basic/base setup styles
- *      ## media
- *      ## typography resets
- *      ## links
- *      ## inputs
- * # Grid v3.0.0
- *      ## medium screen devices
- *      ## tablets
- *      ## mobile devices
- *      ## small mobile devices <= 400px
- * # block grids
- *      ## block grids - medium screen devices
- *      ## block grids - tablets
- *      ## block grids - mobile devices
- *      ## block grids - small mobile devices <= 400px
- * # MISC 
- * # custom grid, block grid STACK breakpoints
- * # base style overrides 
- *      ## links
- * # typography & general theme styles
- *      ## Lists
- *      ## responsive video container
- *      ## floated image
- *      ## tables
- *      ## spacing
- * # preloader
- *      ## page loaded
- * # forms 
- *      ## Style Placeholder Text
- * # buttons 
- * # additional components
- *      ## skillbars
- *      ## alert box
- *      ## pagination 
- * # common and reusable styles
- *      ## animation stuff 
- *      ## MailtoUI style overrides
- * # site header
- *      ## header nav
- *      ## mobile menu toggle 
- * # hero
- *      ## hero content
- *      ## hero social
- *      ## hero scrolldown
- *      ## animate intro content
- * # resume 
- *      ## resume block
- * # portfolio
- *      ## portfolio list
- *      ## modal popup
- * # CTA
- * # contact
- *      ## contact block
- * # footer
- *      ## footer social
- *      ## copyright
- *      ## go top
- *
- * ------------------------------------------------------------------ */
-
-
-/* ===================================================================
- * # settings and variables
- *
- * ------------------------------------------------------------------- */
-
 /* ------------------------------------------------------------------- 
  * ## fonts
  * ------------------------------------------------------------------- */
@@ -96,7 +17,7 @@
     /* color-1(#11ABB0)
      * color-2(#F06000)
      */
-    --color-1: hsla(182, 82%, 38%, 1);
+    --color-1: hsla(24, 100%, 47%, 1);
     --color-2: hsla(24, 100%, 47%, 1);
 
     /* theme color variations
@@ -2340,6 +2261,28 @@ input[type="button"].btn--primary:focus {
     color: var(--color-btn-primary-hover-text);
 }
 
+.btn--primary:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+    background-color: #ff4d4d;
+}
+
+.btn--primary:hover::before {
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 /* button modifiers
  * ------------------------------------------------- */
 .btn.h-full-width, button.h-full-width {
@@ -3444,7 +3387,7 @@ input[type="button"].btn--primary:focus {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/portfolio/gallery/foto5.jpg);
+    background-image: url(../images/portfolio/backgroundheader.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3812,6 +3755,8 @@ input[type="button"].btn--primary:focus {
     border-color: white;
     color: black;
     margin-right: 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .s-about__content-bottom .btn--download svg {
@@ -3819,7 +3764,6 @@ input[type="button"].btn--primary:focus {
     width: 2rem;
     vertical-align: middle;
     margin-right: 1.2rem;
-    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -3827,12 +3771,31 @@ input[type="button"].btn--primary:focus {
 .s-about__content-bottom .btn--download:focus {
     background-color: var(--color-2);
     border-color: var(--color-2);
+    transform: translateY(-4px) scale(1.05); /* Efecto de desplazamiento y aumento */
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4); /* Sombra */
 }
 
 .s-about__content-bottom .btn--download:hover svg path, 
 .s-about__content-bottom .btn--download:focus svg path {
     fill: white;
 }
+
+.s-about__content-bottom .btn--download:hover::before {
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -4585,5 +4548,22 @@ input::selection {
 textarea::selection {
     background-color: #555555; /* Cambia el color de fondo de la selección en áreas de texto */
     color: inherit; /* Mantiene el color original del texto seleccionado en áreas de texto */
+}
+
+.typewriter-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#typewriter-text {
+    display: inline-block;
+    vertical-align: middle;
+    border-right: 2px solid #F06000;
+    padding-right: 2px;
+    color: #F06000;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 1.2; /* Mantiene la alineación */
+    position: relative; /* Evita que el texto "moleste" el contenido debajo */
 }
 
