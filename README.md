@@ -78,9 +78,3 @@ Para ver este portafolio en tu máquina local, sigue estos pasos:
     ```
 
 3. Abre el archivo `index.html` en tu navegador.
-
----
-
-## Licencia
-
-Este proyecto está licenciado bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
