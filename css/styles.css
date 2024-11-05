@@ -4138,6 +4138,26 @@ input[type="button"].btn--primary:focus {
     color: white;
 }
 
+.modal-popup__links {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    list-style: none;
+    padding: 0;
+    z-index: 10;
+}
+
+.modal-popup__links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.modal-popup__links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 
 /* ===================================================================
  * # CTA
@@ -4566,3 +4586,4 @@ textarea::selection {
     background-color: #555555; /* Cambia el color de fondo de la selección en áreas de texto */
     color: inherit; /* Mantiene el color original del texto seleccionado en áreas de texto */
 }
+
